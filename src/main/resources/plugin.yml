@@ -1,0 +1,9 @@
+name: StatTracker
+version: '${project.version}'
+main: com.me.starttracker.Main
+api-version: 1.17
+prefix: STAT
+authors: [ Crusader420_ ]
+description: A plugin that keeps ahold of stats ingame
+commands:
+  stat:
