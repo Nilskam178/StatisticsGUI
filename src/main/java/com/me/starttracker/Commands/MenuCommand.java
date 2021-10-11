@@ -17,15 +17,18 @@ public class MenuCommand implements CommandExecutor {
         CreateMenu createMenu = new CreateMenu();
         AddStat addStat = new AddStat(player);
 
-        if(args != null) {
-            if(args[0].equals("open")) {
+        if(args.length != 0) {
+            if(args[0].equalsIgnoreCase("open")){
                 player.openInventory(CreateMenu.getInventory());
             }
+            else{
+                sender.sendMessage("Use /stat open");
+            }
         }
-        else {
-            sender.sendMessage("/stat open");
+        else{
+            sender.sendMessage("Use /stat open");
         }
 
-        return true;
+        return false;
     }
 }
