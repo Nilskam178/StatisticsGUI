@@ -10,7 +10,7 @@ public class MenuInteraction implements Listener {
     private String color(String msg) { return ChatColor.translateAlternateColorCodes('&', msg); }
 
     @EventHandler
-    public void InteractMenu(InventoryClickEvent event) {
+    public void interactMenu(InventoryClickEvent event) {
 
         if(event.getView().getTitle().equals(color("&6Statistics menu"))) {
             if(event.getCurrentItem() != null)

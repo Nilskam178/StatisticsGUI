@@ -11,7 +11,7 @@ public class CreateMenu {
     private String color(String msg) { return ChatColor.translateAlternateColorCodes('&', msg); }
 
     public CreateMenu() {
-        gui = Bukkit.createInventory(null, 18, color("&6Statistics menu"));
+        gui = Bukkit.createInventory(null, 27, color("&6Statistics menu"));
     }
 
     public static Inventory getInventory() { return gui; }

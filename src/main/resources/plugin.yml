@@ -5,5 +5,8 @@ api-version: 1.17
 prefix: STAT
 authors: [ Crusader420_ ]
 description: A plugin that keeps ahold of stats ingame
+permissions:
+  stat.admin:
+    description: This allows the user to create trackers
 commands:
   stat:
