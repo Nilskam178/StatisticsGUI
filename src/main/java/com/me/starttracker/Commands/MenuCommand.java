@@ -73,9 +73,6 @@ public class MenuCommand implements CommandExecutor {
                         if(Objects.equals(statManager.getAllTrackers().get(i), args[1])) {
                             statManager.removeStat(args[1]);
                         }
-                        else {
-                            sender.sendMessage("There is no tracker called that");
-                        }
                     }
                 }
                 else {

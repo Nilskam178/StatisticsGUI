@@ -51,8 +51,6 @@ public class StatListener implements Listener {
                     }
                 }
             }
-
-            event.getPlayer().sendMessage(event.getBlock().getType().name());
         }
     }
 }
